@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+}
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .source-sans{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  } 
+
+.pizza__card {
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.pizza__card img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+#content {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+.pizza__List {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,40%));
+    grid-auto-rows: minmax(400px, 60vh);
+    gap: 30px;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50%;
+}
+nav {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 20px 50px;
+    
+}
+nav .buttons {
+    font-size: 2.5rem;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    
+    align-items: center;
+}
+.buttons button {
+    padding: 10px;
+    font-size: 2rem;
+    border: 0px solid black;
+    background-color: transparent;
+    color:	#707070;
+    font-family: "Montserrat", sans-serif;
+}
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner {
+    min-height: 300px;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .logoImage {
+    position: absolute;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.price button {
+    background-color: green;
+    border: 0px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    
+}
+.price h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.infoCard h2 {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+}
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid grey;
+}
+.price, .infoCard {
+    padding: 10px 30px;
+}
+.infoBlock {
+    display: flex;
+    height: 700px;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+.infoBlock img {
+    height: 100%;
+}
+.infoBlock div {
+    border: 10px solid #CC0000;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+.infoBlock div h2 {
+    color: #CC0000;
+    font-weight: 600;
+    font-size: calc(12px + 1.5vw);
+}
+.infoBlock div p {
+    font-size: calc(6px + .6vw);
+    font-weight: 300;
+    line-height: 2;
+}
+.infoBlock div button {
+    width: 160px;
+    height: 40px;
+    background-color: #FF0800;
+    color: white;
+    border-width: 0px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.infoBlock:nth-child(odd){
+    flex-direction: row;
+}
+.infoBlock:nth-child(even){
+    flex-direction: row-reverse;
+}
+.aboutOutput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
